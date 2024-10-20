@@ -10,5 +10,5 @@ export default function ServicesLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <>{children}</>;
+  return <main className="flex-grow flex justify-center py-8">{children}</main>;
 }

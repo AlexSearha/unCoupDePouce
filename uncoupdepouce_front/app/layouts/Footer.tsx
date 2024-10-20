@@ -4,16 +4,16 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
 import React from "react";
+import NavMenu from "../[components]/navMenu";
 
 export default function Footer() {
   return (
     <footer
       id="footer"
-      className=" bg-slate-900 text-white py-12 px-4 flex md:justify-center"
+      className=" bg-slate-900 text-white py-12 flex md:justify-center"
     >
-      <div className="flex flex-col gap-4 md:flex-row md:max-w-5xl">
+      <div className="flex flex-col gap-4 md:flex-row md:max-w-5xl px-6">
         <div id="footer--about-us" className="md:w-1/3">
           <h3>A Propos</h3>
           <hr />
@@ -25,31 +25,7 @@ export default function Footer() {
         <div id="footer--menu" className="md:w-1/3">
           <h3>Menu</h3>
           <hr />
-          <nav id="footer--menu-nav">
-            <ul>
-              <Link href="/" className="transition-colors hover:text-gray-400">
-                <li>Accueil</li>
-              </Link>
-              <Link
-                href="/services"
-                className="transition-colors hover:text-gray-400"
-              >
-                <li>Services</li>
-              </Link>
-              <Link
-                href="/contact"
-                className="transition-colors hover:text-gray-400"
-              >
-                <li>Contact</li>
-              </Link>
-              <Link
-                href="/a-propos"
-                className="transition-colors hover:text-gray-400"
-              >
-                <li>A Propos</li>
-              </Link>
-            </ul>
-          </nav>
+          <NavMenu isCol={true} />
         </div>
         <div id="footer--informations" className="md:w-1/3">
           <h3>Informations</h3>

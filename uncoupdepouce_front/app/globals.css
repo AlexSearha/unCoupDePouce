@@ -69,3 +69,11 @@ h5 {
 h6 {
   font-size: 1.3rem;
 }
+
+input {
+  height: 35px;
+}
+
+input::placeholder {
+  font-style: italic;
+}
